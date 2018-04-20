@@ -1,0 +1,24 @@
+.first-image {
+  overflow: hidden;
+  max-width: auto;
+  height: 100vh;
+}
+
+.container {
+  padding: 10px;
+}
+
+.evive-logo {
+  width: 8vw;
+  display: block;
+  padding-bottom: 20vh;
+}
+
+.client-logo {
+  display: block;
+  padding-bottom: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10vh;
+  width: 50%;
+}
