@@ -5,10 +5,53 @@ import '../stylesheets/AppLoginPage.css';
 
 class AppLogin extends Component {
 
+  state = {
+    username: {
+      value: '',
+      initial: true,
+      valid: false,
+    },
+
+    password: {
+      value: '',
+      valid: false,
+      initial: true,
+      visible: false,
+    },
+    allowSubmit: false
+  }
+
   handleLoginRedirect(e) {
     browserHistory.push('/dashboard');
   }
 
+  handleInputs = ( type, value ) => {
+    const validations = {
+      password: /.{8,16}./,
+      username: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    }
+
+    const valid = validations[type].test(value);
+      this.setState( (prev) => ({
+        [type]: {
+          ...prev[type],
+          value,
+          valid,
+          initial: false
+        }
+      }),
+
+      () => {
+        if ( this.state.username.valid === true && this.state.password.valid === true ) {
+          this.setState({ allowSubmit: true })
+        }
+        else {
+          this.setState({ allowSubmit: false })
+        }
+      }
+
+    )
+  }
 
   render() {
     return (

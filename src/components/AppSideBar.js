@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { getCards } from '../services/cardsApi';
+import SideCards from './SideCards';
+import MyCards from './MyCards';
+import '../stylesheets/AppDashboard.css';
 import {
   Sidebar,
   Button,
@@ -6,10 +10,12 @@ import {
   Menu,
   Image,
   Icon,
-  Header
+  Header,
+  Card,
 } from 'semantic-ui-react';
 
 class AppSideBar extends Component {
+
   render() {
     const visible = this.props.toggle;
     return (
@@ -56,8 +62,21 @@ class AppSideBar extends Component {
 
           <Sidebar.Pusher>
             <Segment basic>
-               <Header as = 'h2'>CAMPAIGNS</Header>
-              <Image src = 'https://eeab9099f80ae9d42d2d-c92ae8cf13840fd451d25c3e40c26443.ssl.cf1.rackcdn.com/6cc51395d081dd909f670d529ecf38c60084ee68cb82a7345578664e34a88369c8f52be2d492a11bd129dd4b9dc2767a946cf764428103e2e75f085982a5f724.png'/>
+
+              <Header as = 'h2'>CAMPAIGNS</Header>
+
+                <Image className = 'campaigns' src = 'https://eeab9099f80ae9d42d2d-c92ae8cf13840fd451d25c3e40c26443.ssl.cf1.rackcdn.com/6cc51395d081dd909f670d529ecf38c60084ee68cb82a7345578664e34a88369c8f52be2d492a11bd129dd4b9dc2767a946cf764428103e2e75f085982a5f724.png'/>
+
+                <div className = 'sidecards'>
+                  <SideCards />
+                </div>
+
+              <br/><br/><br/><br/><br/><br/>
+
+              <div className = 'mycards'>
+                <MyCards />
+              </div>
+
             </Segment>
           </Sidebar.Pusher>
 
