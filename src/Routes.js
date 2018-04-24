@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import {Router, Route, browserHistory, history} from 'react-router';
-import { render } from 'react-dom'
+import {render} from 'react-dom'
 import AppLoginPage from './components/AppLoginPage';
 import AppDashboard from './components/AppDashboard';
 

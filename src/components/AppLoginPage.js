@@ -21,3 +21,12 @@ class AppLoginPage extends Component {
 }
 
 export default AppLoginPage;
+
+
+// login page functionality: redux
+// validation
+// footer
+// cards dropable: react.sortable
+// pinnable
+// sidebar always present
+// alignmnet

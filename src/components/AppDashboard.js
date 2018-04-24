@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import AppLogin from './AppLogin';
 import AppSideBar from './AppSideBar';
 import AppNavBar from './AppNavBar';
+import SideCards from './SideCards';
 
 class AppDashboard extends Component {
   state = {
@@ -19,6 +20,7 @@ class AppDashboard extends Component {
       <div className = 'dashboard-container'>
         <AppNavBar toggleSidebar={this.toggleSidebar}/>
         <AppSideBar toggle={this.state.sidebarToggle}/>
+
       </div>
     );
   }
