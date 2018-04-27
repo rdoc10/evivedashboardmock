@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { getCards } from './../../services/cardsApi';
 import { Carousel } from 'react-responsive-carousel';
 import SideCards from '../SideCards';
-import MyCards from '../MyCards';
 import './../../styles/AppDashboard.css';
 import SortableCards from '../SortableCards';
 import {
@@ -50,7 +48,7 @@ class AppSideBar extends Component {
 
         <Menu.Item  id="hover" name="help">
           <Icon name = 'help' className = 'icon' />
-            <div className = 'icon-desc'> Help Center </div> 
+            <div className = 'icon-desc'> Help Center </div>
         </Menu.Item>
       </div>
     );

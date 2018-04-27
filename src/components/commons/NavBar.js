@@ -3,6 +3,10 @@ import '../../styles/AppDashboard.css';
 import {Router, Route, browserHistory, history} from 'react-router';
 import { Image, Menu, Button, Icon, Header } from 'semantic-ui-react';
 
+const EVIVE_LOGO = 'https://047f018102c8c8f717a6-1efb167bc857a9871c34d9fa1ea1cbde.ssl.cf1.rackcdn.com/myevive_black.png';
+
+const TRAVELLERS_LOGO = 'https://59b602507414a6d288cf-98a1a17df509e6abbdfa88e2a08a0e33.ssl.cf1.rackcdn.com/static_resources/clientLogosImages/travelers%20transparent.png';
+
 class AppNavBar extends Component {
 
   handleLogoutRedirect(e) {
@@ -18,7 +22,7 @@ class AppNavBar extends Component {
         </Menu.Item>
 
         <Menu.Item>
-          <Image src='https://047f018102c8c8f717a6-1efb167bc857a9871c34d9fa1ea1cbde.ssl.cf1.rackcdn.com/myevive_black.png'/>
+          <Image src = {EVIVE_LOGO} />
         </Menu.Item>
 
         <Menu.Menu position = 'right'>
@@ -27,7 +31,7 @@ class AppNavBar extends Component {
           </Menu.Item>
 
           <Menu.Item className = 'travellers'>
-            <Image src = 'https://59b602507414a6d288cf-98a1a17df509e6abbdfa88e2a08a0e33.ssl.cf1.rackcdn.com/static_resources/clientLogosImages/travelers%20transparent.png' />
+            <Image src = {TRAVELLERS_LOGO} />
           </Menu.Item>
 
           <Menu.Item>
@@ -35,7 +39,7 @@ class AppNavBar extends Component {
           </Menu.Item>
 
           <Menu.Item>
-            <Icon name = 'power off' onClick = { this.handleLogoutRedirect } />
+            <Icon name = 'power' onClick = { this.handleLogoutRedirect } />
           </Menu.Item>
 
         </Menu.Menu>
