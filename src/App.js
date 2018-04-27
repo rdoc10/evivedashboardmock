@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import AppLoginPage from './components/LoginPage';
-import AppDashboard from './components/Dashboard';
-import Routes from './Routes';
+import Routes from './routes/Routes';
 
 class App extends Component {
   render() {
