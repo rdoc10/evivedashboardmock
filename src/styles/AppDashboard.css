@@ -1,0 +1,90 @@
+.travellers {
+  display: block;
+  float: right;
+  height: 7vh;
+  width: 16%;
+  margin-left: 0vw;
+}
+
+.text {
+   margin-left: 40vw;
+ }
+
+ .sidecards {
+   float: right;
+ }
+
+.mycards {
+  float: left;
+}
+
+ .campaigns {
+   width: 75vw;
+   height: 82vh;
+ }
+
+ .cards-image{
+   min-width: 80px;
+   max-height: 100px;
+   padding: 10px;
+   pointer-events: none;
+ }
+
+ .cards-desc {
+   text-align: center;
+ }
+
+ .dashboard-center{
+  position: relative;
+  top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidecards{
+  position: relative;
+  left: 20px;
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+#hover:hover{
+  background-color: #6a6d6e;
+  border-radius: 25px;
+}
+
+.mycards {
+  padding-top: 30px;
+  cursor: all-scroll;
+}
+
+.text-sample {
+  padding: 20px 0px;
+  color: #6a6d6e;
+}
+
+.sidebar {
+  background-color: white;
+}
+
+i.icon {
+  color: black;
+}
+
+div.ui.inverted.vertical.labeled.icon.ui.scale.down.left.thin.visible.menu {
+  background-color: white;
+}
+
+.icon-desc {
+  color: black;
+}
+
+.meta-value {
+  background-color: grey;
+  display: block;
+  margin-left: 0px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}

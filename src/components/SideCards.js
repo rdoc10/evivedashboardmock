@@ -29,8 +29,6 @@ class SideCards extends Component {
   render() {
     return (
       <div>
-
-              <div> Hello Orangutan </div>
               <div className = 'side-cards'>
               {console.log(this.state)}
               { (this.state.cards).filter(card => card.section === 'side-cards').map((card) => (
