@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../stylesheets/AppDashboard.css';
+import '../../styles/AppDashboard.css';
 import {Router, Route, browserHistory, history} from 'react-router';
 import { Image, Menu, Button, Icon, Header } from 'semantic-ui-react';
 
