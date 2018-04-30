@@ -56,6 +56,7 @@
 
 .mycards {
   padding-top: 30px;
+  padding-bottom: 60px;
   cursor: all-scroll;
 }
 
@@ -87,4 +88,33 @@ div.ui.inverted.vertical.labeled.icon.ui.scale.down.left.thin.visible.menu {
   color: white;
   padding: 10px;
   cursor: pointer;
+}
+
+.footer-dashboard {
+  padding-top: 100px;
+}
+
+.footer{
+    position: absolute;
+    bottom: -225px;
+    left: 0;
+    min-width: calc(98vw + 6px);
+    background-color: white;
+    border: 1px solid #d4d4d5;
+    min-height: 46px;
+    padding-top: 15px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.footer-left{
+    float:left;
+}
+
+.footer-right{
+    float:right;
+}
+
+.footer-right a{
+    margin-right: 15px !important;
 }

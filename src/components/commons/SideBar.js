@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import SideCards from '../SideCards';
+import DashboardFooter from './DashboardFooter';
 import './../../styles/AppDashboard.css';
 import SortableCards from '../SortableCards';
 import {
@@ -99,6 +100,10 @@ class AppSideBar extends Component {
               <div className = 'mycards'>
                 <div className = 'text-sample'> <h3>MY FAVORITES</h3> </div>
                 <SortableCards />
+              </div>
+
+              <div className = 'footer-dashboard'>
+                <DashboardFooter />
               </div>
 
             </Segment>

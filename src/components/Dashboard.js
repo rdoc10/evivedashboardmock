@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import AppSideBar from './commons/SideBar';
 import AppNavBar from './commons/NavBar';
+import DashboardFooter from './commons/DashboardFooter';
 
 class AppDashboard extends Component {
   state = {
@@ -15,13 +16,12 @@ class AppDashboard extends Component {
 
   render() {
     return(
-      <div className = 'dashboard-container'>
-        <AppNavBar toggleSidebar={this.toggleSidebar}/>
-        <AppSideBar toggle={this.state.sidebarToggle}/>
 
+        <div className = 'dashboard-container'>
+          <AppNavBar toggleSidebar={this.toggleSidebar}/>
+          <AppSideBar toggle={this.state.sidebarToggle}/>
+        </div>
 
-
-      </div>
     );
   }
 }
